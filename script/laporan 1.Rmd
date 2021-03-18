@@ -1,0 +1,27 @@
+---
+title: "tes"
+author: "Ujang Fahmi"
+date: "3/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(echarts4r)
+```
+
+# tes 
+```{r, echo=FALSE}
+cars %>%
+  e_charts(dist) %>%
+  e_scatter(speed) %>%
+  e_datazoom() %>%
+  e_zoom(
+    dataZoomIndex = 0,
+    start = 20,
+    end = 40,
+    btn = "BUTTON"
+  ) %>%
+  e_button("BUTTON", "Zoom in")
+```
+
