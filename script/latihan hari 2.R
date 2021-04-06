@@ -96,7 +96,8 @@ data2 = read_csv(file = "https://github.com/tidyverse/readr/raw/master/inst/extd
 write_delim(x = data2, path = "data/bersih/file1.txt")
 data3 = read_delim(file = "data/bersih/file1.txt", delim = " ")
 
-tes = read_delim("https://iri.columbia.edu/~forecast/ensofcst/Data/archive/ensoforecast_data.txt", delim = " ", col_names = TRUE)
+tes = read_delim("https://iri.columbia.edu/~forecast/ensofcst/Data/archive/ensoforecast_data.txt", 
+                 delim = " ", col_names = TRUE)
 
 # read data excel
 library(readxl)
