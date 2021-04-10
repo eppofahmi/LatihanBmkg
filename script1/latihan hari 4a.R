@@ -8,7 +8,7 @@ library(raster) # map
 library(sf) # map sf file
 library(sp)
 
-install.packages("echarts4r")
+# install.packages("echarts4r")
 
 # cara 1 ----
 ina = getData('GADM', country = 'Indonesia', level = 2, type = "sp")
@@ -51,7 +51,7 @@ ggplot() +
 
 ggsave("plot/plot-maps1.png", width = 15, height = 8, units = "cm", dpi = 300)
 
-# Visualisasi Menggunakan Echar
+# Visualisasi Menggunakan Echart
 # Berdasar api js echart dari baidu
 library(echarts4r)
 
